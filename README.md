@@ -14,7 +14,7 @@ My project portfolio on GitHub
   
 ## Python ML Kaggle Project
 
-  A Kaggle machine learning competition project
+  A Kaggle machine learning competition project for an ML course
   
   Looked at online Harvard and MIT course data to make predictions on whether a student will complete an online course based on student activity
   
