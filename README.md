@@ -1,6 +1,6 @@
 # project_portfolio
 
-My project portfolio on GitHub
+My project portfolio on GitHub - Monty Morawan
 
 ## SQL Music Database Project
 
