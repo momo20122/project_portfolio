@@ -10,7 +10,7 @@ My project portfolio on GitHub
   
   Folder in repository contains a file, SQLMusicDatabaseERD.PNG, that contains photo of entity relationship diagram showing all tables
   
-  Collaborated with two other class members through a shared SQL server
+  Collaborated with two other class members through a shared SQL server (folder only contains code written by me)
   
 ## Python ML Kaggle Project
 
