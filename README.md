@@ -4,7 +4,7 @@ My project portfolio on GitHub
 
 ## SQL Music Database Project
 
-  Conceived, diagramed, coded, and populated a music database in SQL from scratch
+  Conceived, diagramed, coded, and populated a music database in MS SQL Server from scratch
 
   Performed SQL queries on the database to extract information such as a user's musical preferences, the artist of a song, and song release dates
   
