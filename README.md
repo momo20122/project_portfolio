@@ -6,7 +6,7 @@ My project portfolio on GitHub
 
   Conceived, diagramed, coded, and populated a music database in MS SQL Server from scratch
 
-  Performed SQL queries on the database to extract information such as a user's musical preferences, the artist of a song, and song release dates
+  Performed SQL queries on the database to extract information
   
   Folder in repository contains a file, SQLMusicDatabaseERD.PNG, that contains photo of entity relationship diagram showing all tables
   
