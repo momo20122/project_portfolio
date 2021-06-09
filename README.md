@@ -22,7 +22,7 @@ My project portfolio on GitHub - Monty Morawan
   
   Collaborated with two other class members using GitHub
   
-  Link to Public Report: https://mvm22.shinyapps.io/final-project-BH7/
+  Link to public report: https://mvm22.shinyapps.io/final-project-BH7/
 
 ## Python ML Kaggle Project
 
