@@ -1,0 +1,103 @@
+---
+title: "Final Project Midpoint Deliverable"
+author: "Hannah Yerex, Monty Morawan, Nawal Shego"
+date: "03/02/2020"
+output: html_document
+---
+
+```{r setup, include = F}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction 
+
+A major issue that we face today is climate change, a phenomenon involving the trapping of heat by greenhouse gases, such as CO2, that ultimately damages the environment. It has been the cause of rising global temperatures, melting glaciers, and degrading ecosystems. If left ignored, these issues will continue to persist and become more of a problem for future generations. As a result, we will explore the issue of climate change in order to discover how countries around the world are being affected and what they are doing to both contribute to and help solve this complex problem. One dataset that we will be analyzing is from _Climate Funds Update_, a website that regularly monitors multilateral climate funds. It contains information on global projects from a variety of countries that aim to improve the environment in some way and so we could use this to determine which countries are making the greatest contributions to decreasing greenhouse gas emissions. Another dataset we will be analyzing is joint information from both the archived _Carbon Dioxide Information Analysis Centre_ and _Global Carbon Project 2018_. It displays annual CO2 emissions by country, which we can use to see how each country is contributing to the negative effects of climate change. The last dataset we will be analyzing is from the _Global Burden of Disease Collaborative Network_ and contains data on pollution-related deaths by country. This will help us determine the countries that are being impacted the most by climate change, as pollution is caused by greenhouse gas emissions. 
+
+## Summary Information
+
+```{r, echo = F, warning = F, include = F}
+library(dplyr)
+source("./scripts/summary_info.R")
+```
+``` {r, echo = F}
+annual_emissions <- read.csv("./data/annual-co2-emissions-per-country.csv",
+                               stringsAsFactors = FALSE)
+pollution_deaths <- read.csv("./data/death-rates-total-air-pollution.csv",
+                               stringsAsFactors = FALSE)
+projects <- read.csv("./data/country-contributions.csv",
+                       stringsAsFactors = FALSE)
+
+summary_info_list <- get_summary_info(annual_emissions, 
+                                      pollution_deaths, projects)
+```
+CO2 Emissions have only been increasing since the mid 1700s (the industrial revolution). Since this time, our world has emitted `r summary_info_list[1]`, with the top three countries (in terms of emissions levels) being the `r summary_info_list[3]`. We also see that the total amount of funding for climate-related projects is `r summary_info_list[2]`, with the top three contributors (in terms of project funding) to slowing/reversing these climate change impacts being the `r summary_info_list[4]`. The total global rate of deaths related to pollution (caused by carbon emissions/climate change) is `r summary_info_list[5]`.
+
+## Table: CO2 Emissions, Pollution-Related Death Rate, & Climate Change Project Funding (by Country)
+Below, you will see a table that aggregates three different data sets. The three variables included in the table are CO2 emissions (measured in tons of carbon), pollution-related deaths (in terms of 100,000 total deaths), and funding for projects aimed at mitigating the impacts of climate change (in USD millions). The table is sorted by the second column, which sums the total CO2 emitted by each country over the period of 1751 to 2017, showing how each county has contributed to global CO2 levels and "caused" climate change. We grouped each variable by country because our goal is to identify if the countries that contributed the most to _causing_ climate change (emitting Co2), are the same countries that have _suffered_ the most from climate change impacts (using the metric of deaths by pollution) and have _donated_ the most funding towards mitigating these impacts (in millions of USD contributed to climate change projects).
+
+```{r, echo = F, warning = F, include = F}
+library(dplyr)
+library(kableExtra)
+source("./scripts/aggregate_table.R")
+``` 
+```{r, echo = F}
+options(knitr.kable.NA = "--")
+call_table(emissions_by_country, pollution_deaths_by_country,
+           projects_by_country)
+```
+
+
+The results in this table are not entirely synonymous with what our expectations were coming into the project. The first row in the table is the _global_ amount of CO2 emitted, giving a reference for the portion of each country's individual emissions. The third column in this row provides the number of pollution-related deaths, per 100,000 global deaths, to provide context as to the pollution-related death rate worldwide. 
+
+The highest ranking country (in terms of C02 emissions) is the United States, which is also the same country with the highest pledged towards climate change mitigation projects (in millions). This matches the expectation that we had about the correlation of these two variables. Germany, the United Kingdom, and Japan also follow this trend of high CO2 emissions **and** high amounts of project funding. However, other countries with CO2 emission levels at the top of the chart, such as China, Russia, and India, also have high rates of pollution-related deaths but offer very little to no funding to climate change projects. This data demonstrates a divide between countries that are large contributors to the _cause_ of climate change but **also** the _solution_ and countries that emit high levels of greenhouse gases, suffer from high rates of pollution-related deaths, but have yet to put resources towards mitigation of the problem.
+
+After reviewing the bulk of the data, it seems that the highest number of pollution-related deaths seem to relate less to the amount of CO2 that specific country emitted. The trend appears to be that pollution-related deaths occur most commonly in developing countries. 
+
+## Chart 1: CO2 Emissions per Country
+The map below is color-coded by CO2 emissions, helping us visualize the question of which countries are contributing the most to CO2 emissions.  We chose a map because it is the best way to display the different countries and the color-coding makes it easy to see where in the world there are higher levels of CO2 and where there are lower levels. As we can see from the map, the countries with the highest CO2 emissions usually occur in the northern hemisphere. In addition, the US produces the most amount of CO2 by far compared to the rest of the world, with China following close behind. Russia and India follow on this list, which is synonymous with the data presented in the summary table, above.
+
+```{r, echo = F, warning = F, include = F}
+library(rworldmap)
+library(dplyr)
+library(ggplot2)
+source("./scripts/chart1.R")
+```
+``` {r, echo = F, fig.width = 15, fig.height = 10}
+call_map(edited_map_data)
+```
+
+## Chart 2: Correlation between CO2 Emissions & Climate-related Project Funding (by Country)
+This chart attempts to answer the question of whether or not there is a clear relationship between a country's total recorded CO2 emissions and its total funding for climate-related projects. Each individual dot is a country, and its position on the chart depends on its total recorded CO2 emissions in metric tonnes, which is the x-axis, and its total funding for climate-related projects in USD million, which is the y-axis. Hovering over a dot displays the country name, its x-value, and its y-value. Holding down the mouse key and moving the mouse will bring up an adjustable box that zooms in to the area within the box, allowing us to see certain dots more clearly.
+
+```{r, echo = F, warning = F, include = F}
+library(dplyr)
+library(ggplot2)
+library(plotly)
+source("./scripts/chart2.R")
+```
+``` {r, echo = F, fig.width = 9, fig.height = 7}
+contributions_df <-  read.csv("./data/country-contributions.csv",
+                                               stringsAsFactors = FALSE)
+co2_emissions_df <- read.csv("./data/annual-co2-emissions-per-country.csv",
+                                      stringsAsFactors = FALSE)
+contributions_emissions_plot(contributions_df, co2_emissions_df)
+```
+
+A scatterplot was chosen because it allows us to identify patterns between dots' positions, which would help us establish relationships between the two variables, CO2 emissions and funding. As we can see from the chart, there is no clear relationship between total recorded CO2 emissions and total funding for climate-related projects. As a whole, as total CO2 emissions increases, total funding doesn't seem to either only increase or decrease. However, for countries with total funding over 200 million dollars, as CO2 emissions increase, total funding does generally increase, which indicates that for these countries only, the more CO2 they produce, the more money they are willing to spend to counteract this. 
+
+## Chart 3: CO2 Emissions Over Time
+We include the chart below to emphasize the severity of greenhouse gases (such as CO2) that are building in the earth's atmosphere and furthering the impacts of climate change. The heights of the bars along the graph visually demonstrate the exponential growth in CO2 emissions from 1751-2017. By hovering over each bar/line, you can see the specific year and tons of carbon (in billions).
+
+```{r, echo = F, warning = F}
+library(dplyr)
+library(ggplot2)
+library(plotly)
+source("./scripts/chart3.R")
+```
+``` {r, echo = F, fig.width = 9, fig.height = 6}
+timeline_emissions(emissions_by_year)
+```
+
+We used this bar chart format, because it highlights that global warming / climate change is a significant issue that is still increasing, due to the persistant increase in greenhouse gas emissions. The data shows that carbon emissions have increased from merely 5 billion tons in 1900 to about 90 billion tons in 2017, a dramatic increase of ~ **18x**. 
+
+Including this visualization in our report provides reasoning for the argument that we, as a global society, are not doing _enough_ to to mitigate the impacts of climate change in the earth's atmosphere. Using the conclusions from Chart 2, not all countries producing high levels of CO2 are contributing a sizable amount ($), if any, towards climate change mitigation projects. Seeing the drastic and continual increase in CO2 levels, we can argue that each country needs to do their part in solving this problem, especially those countries that are at the top of the chart for emissions levels.
