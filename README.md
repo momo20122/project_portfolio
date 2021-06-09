@@ -20,7 +20,7 @@ My project portfolio on GitHub - Monty Morawan
   
   Coded using RStudio and R packages such as Shiny, Plotly, and dplyr
   
-  Collaborated with two other class members
+  Collaborated with two other class members using GitHub
   
   Link to Public Report: https://mvm22.shinyapps.io/final-project-BH7/
 
