@@ -30,7 +30,7 @@ My project portfolio on GitHub - Monty Morawan
   
   Looked at online Harvard and MIT course data to make predictions on whether a student will complete an online course based on student activity
   
-  Created majority class classifier and decision tree models for predictions using Python within Google Colab
+  Created Python majority class classifier and decision tree models for predictions using ML libraries, such as sklearn, within Google Colab
   
   Decision tree model used for Kaggle submission
   
