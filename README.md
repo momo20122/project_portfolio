@@ -40,6 +40,6 @@ These are examples of projects that I have worked on - Monty Morawan
 
   A web scraping project for a Data Science class
   
-  Scraped recipes from the Wiki Cookbook website in order to create a recipes dataframe
+  Scraped recipes from the Wiki Cookbook website in order to create a recipes dataframe using Python
   
   Completed by myself
