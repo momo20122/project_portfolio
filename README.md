@@ -4,7 +4,7 @@ These are examples of projects that I have worked on - Monty Morawan
 
 ## SQL Music Database Project
 
-  Conceived, diagramed, coded, and populated a music database in MS SQL Server from scratch
+  Conceived, diagramed, coded, and populated a music database in Microsoft SQL Server from scratch
 
   Performed SQL queries on the database to extract information
   
@@ -26,7 +26,7 @@ These are examples of projects that I have worked on - Monty Morawan
 
 ## Python ML Kaggle Project
 
-  A Kaggle machine learning competition project for an ML class
+  A Kaggle machine learning competition project for a Machine Learning class
   
   Looked at online Harvard and MIT course data to make predictions on whether a student will complete an online course based on student activity
   
@@ -36,9 +36,9 @@ These are examples of projects that I have worked on - Monty Morawan
   
   Completed by myself
   
-## Web Scraping Assignment
+## Web Scraping Project
 
-  A web scraping assignment for a Data Science class
+  A web scraping project for a Data Science class
   
   Scraped recipes from the Wiki Cookbook website in order to create a recipes dataframe
   
