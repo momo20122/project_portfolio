@@ -1,6 +1,6 @@
 # project_portfolio
 
-My project portfolio on GitHub - Monty Morawan
+These are examples of projects that I have worked on - Monty Morawan
 
 ## SQL Music Database Project
 
@@ -33,5 +33,13 @@ My project portfolio on GitHub - Monty Morawan
   Created Python majority class classifier and decision tree models for predictions using ML libraries, such as sklearn, within Google Colab
   
   Decision tree model used for Kaggle submission
+  
+  Completed by myself
+  
+## Web Scraping Assignment
+
+  A web scraping assignment for a Data Science class
+  
+  Scraped recipes from the Wiki Cookbook website in order to create a recipes dataframe
   
   Completed by myself
