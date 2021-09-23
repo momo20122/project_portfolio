@@ -40,7 +40,7 @@ These are examples of projects that I have worked on - Monty Morawan
 
   A web scraping project for a Data Science class
   
-  Scraped recipes from the Wiki Cookbook website using Python and an HTML parser package called BeautifulSoup
+  Scraped recipes from the Wiki Cookbook website using Python and an HTML parser library called Beautiful Soup
   
   Created a recipes dataframe with scraped recipes and stored it in CSV file
   
