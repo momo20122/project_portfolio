@@ -8,7 +8,7 @@ These are examples of projects that I have worked on - Monty Morawan
   
   Scraped reviews for the restaurant from the Yelp website using Python and an HTML parser library called Beautiful Soup
   
-  Created a reviews dataframe with scraped reviews and stored it in CSV file
+  Created a reviews dataframe with scraped reviews and stored it in a CSV file
   
   Completed by myself
   
@@ -34,7 +34,7 @@ These are examples of projects that I have worked on - Monty Morawan
   
   Created Python majority class classifier and decision tree models for predictions using ML libraries, such as sklearn, within Google Colab
   
-  Decision tree model used for Kaggle submission
+  Decision tree model was used for Kaggle submission
   
   Completed by myself
   
@@ -66,7 +66,7 @@ These are examples of projects that I have worked on - Monty Morawan
   
   Scraped recipes from the Wiki Cookbook website using Python and an HTML parser library called Beautiful Soup
   
-  Created a recipes dataframe with scraped recipes and stored it in CSV file
+  Created a recipes dataframe with scraped recipes and stored it in a CSV file
   
   Completed by myself
 
