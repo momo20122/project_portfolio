@@ -26,9 +26,9 @@ These are examples of projects that I have worked on - Monty Morawan
 
 ## First Python ML Kaggle Project
 
-  A Kaggle machine learning competition project for a Machine Learning class
-  
   My first machine learning project
+  
+  A Kaggle machine learning competition project for a Machine Learning class
   
   Looked at online Harvard and MIT course data to make predictions on whether a student will complete an online course based on student activity
   
