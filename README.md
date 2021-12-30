@@ -10,6 +10,8 @@ These are examples of projects that I have worked on - Monty Morawan
   
   Created a reviews dataframe with scraped reviews and stored it in a CSV file
   
+  Latest scrape was performed on 12/27/2021
+  
   Completed by myself
   
 ## SS Redmond Yelp Reviews K-means++ Clustering Project
