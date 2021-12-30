@@ -22,7 +22,7 @@ These are examples of projects that I have worked on - Monty Morawan
   
   Reads in data from the CSV file I created in my SS Redmond Yelp Reviews Web Scraping Project
   
-  Compelted by myself
+  Completed by myself
 
 ## First Python ML Kaggle Project
 
