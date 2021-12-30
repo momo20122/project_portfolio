@@ -42,7 +42,7 @@ These are examples of projects that I have worked on - Monty Morawan
 
   A machine learning project for a public Kaggle competition titled "Titanic - Machine Learning from Disaster"
   
-  Created machine learning models using Python to predict whether a passanger survived the Titanic incident
+  Created machine learning models using Python to predict whether a passenger survived the Titanic incident
   
   Placed 2886/13995 for my best entry as of 12/29/2021, under the nickname "MomoDS"
   
