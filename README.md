@@ -42,9 +42,9 @@ These are examples of projects that I have worked on - Monty Morawan
 
   A machine learning project for a public Kaggle competition titled "Titanic - Machine Learning from Disaster"
   
-  Created machine learning models using Python to predict whether a passenger survived the Titanic incident
+  Created Python logistic regression and decision tree models using ML libraries such as sklearn to predict whether a passenger survived the Titanic incident
   
-  Placed 2886/14000 for my best entry as of 12/29/2021, under the nickname "MomoDS"
+  Placed 2886/14004 for my best entry as of 12/29/2021, under the nickname "MomoDS"
   
   Completed by myself 
   
@@ -52,7 +52,7 @@ These are examples of projects that I have worked on - Monty Morawan
 
   A machine learning project for a public Kaggle competition titled "House Prices - Advanced Regression Techniques"
   
-  Created machine learning Ridge regression models using Python to predict house prices
+  Created Python ridge regression models using ML libraries such as sklearn to predict house prices
   
   Placed 2746/5363 for my best entry as of 12/29/2021, under the nickname "MomoDS"
   
