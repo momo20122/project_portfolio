@@ -54,7 +54,7 @@ These are examples of projects that I have worked on - Monty Morawan
   
   Created machine learning Ridge regression models using Python to predict house prices
   
-  Placed 2744/5361 for my best entry as of 12/29/2021, under the nickname "MomoDS"
+  Placed 2746/5363 for my best entry as of 12/29/2021, under the nickname "MomoDS"
   
   Completed by myself
   
