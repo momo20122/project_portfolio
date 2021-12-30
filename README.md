@@ -24,9 +24,11 @@ These are examples of projects that I have worked on - Monty Morawan
   
   Link to public report: https://mvm22.shinyapps.io/final-project-BH7/
 
-## Python ML Kaggle Project
+## First Python ML Kaggle Project
 
   A Kaggle machine learning competition project for a Machine Learning class
+  
+  My first machine learning project
   
   Looked at online Harvard and MIT course data to make predictions on whether a student will complete an online course based on student activity
   
