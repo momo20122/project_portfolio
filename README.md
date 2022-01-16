@@ -18,7 +18,7 @@ These are examples of projects that I have worked on - Monty Morawan
 
   A sentiment analysis project for the Redmond, WA location of my family's Thai restaurant, Silver Spoon
   
-  Reads in data from the CSV file I created in my SS Redmond Yelp Reviews Web Scraping Project
+  Read in data from the CSV file I created in my SS Redmond Yelp Reviews Web Scraping Project
   
   Created logistic regression models that predict the sentiment (positive/negative) of a review 
   
@@ -30,7 +30,7 @@ These are examples of projects that I have worked on - Monty Morawan
 
   A k-means++ clustering project for the Redmond, WA location of my family's Thai restaurant, Silver Spoon
   
-  Reads in data from the CSV file I created in my SS Redmond Yelp Reviews Web Scraping Project
+  Read in data from the CSV file I created in my SS Redmond Yelp Reviews Web Scraping Project
   
   Created Python functions from scratch that utilizes k-means++ clustering in order to group similar reviews into k clusters
   
